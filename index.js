@@ -5,7 +5,7 @@ import { createStore }      from 'redux';
 
 import exampleReducer from './public/src/reducers/root'
 
-import App from './public/src/components/appasdf';
+import App from './public/src/components/app';
 
 let store = createStore(exampleReducer);
 
