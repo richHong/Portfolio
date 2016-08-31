@@ -56,21 +56,21 @@ class App extends Component {
           <img className="picLeft" src="" />
         </div>
 
-        <div id="slide6" className="slide header">
+        <div className="header">
           <footer className="footer-distributed">
             <div className="footer-left">
               <h3>Portfolio</h3>
               <p className="footer-company-name">Richard Hong &copy; 2016</p>
               <div className="footer-icons">
-                <a href="#"><i className="fa fa-facebook"></i></a>
-                <a href="#"><i className="fa fa-twitter"></i></a>
-                <a href="#"><i className="fa fa-linkedin"></i></a>
+                <a href="http://linkedin.com/in/richhong"><i className="fa fa-linkedin"></i></a>
+                <a href="#"><i className="fa fa-angellist"></i></a>
                 <a href="#"><i className="fa fa-github"></i></a>
+                <a href="#"><i className="fa fa-th-large"></i></a>
               </div>
             </div>
             <div className="footer-right">
               <h3>Contact Me</h3>
-              <form action="#" method="post">
+              <form>
                 <input type="text" name="email" placeholder="Email" />
                 <textarea name="message" placeholder="Message"></textarea>
                 <button>Send</button>
