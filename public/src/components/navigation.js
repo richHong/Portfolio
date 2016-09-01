@@ -75,7 +75,7 @@ class Navigation extends Component {
         style={modalStyles}
         >
         <div >
-          <a style={{ 'float':'left' }}href="../../assets/resume.pdf" download><i className="fa fa-download" aria-hidden="true" /> Download</a>
+          <a style={{ 'float':'left' }}href="../../assets/resume.pdf" download><i className="fa fa-download" aria-hidden="true" /> Download   </a>
           <a style={{ 'float':'right'}} onClick={this.closeModal}>Close <i className="fa fa-times-circle" aria-hidden="true" /></a>
         </div>
         <div>
