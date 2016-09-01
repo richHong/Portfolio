@@ -346,6 +346,7 @@ li {
 .techStack {
   color: #696969;
   line-height: 200%;
+  font-size: 125%;
 }
 .fixed-navbar {
   position: fixed !important;
