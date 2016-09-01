@@ -29,7 +29,7 @@ class App extends Component {
           href='https://artisanalapp.herokuapp.com/#/'
           github='https://github.com/richHong/Artisinal'
           title='Artisanal'
-          description='Full stack web application designed to help users search for delicious recipes'
+          description='Full stack web application for businesses and users to list and review artisan foods shops and restaurants'
           techStack={['MongoDB', 'Express','Angular', 'Node', 'Google Maps' ]}
           image='../assets/artisinal.png'
           picSide='picRight' />
@@ -39,7 +39,7 @@ class App extends Component {
           href='https://feastlyapp.herokuapp.com/#/home'
           github='https://github.com/richHong/Feast.ly'
           title='Feast.ly'
-          description='Full stack web application for businesses and users to list and review artisan foods shops and restaurants'
+          description='Full stack web application designed to help users search for delicious recipes'
           techStack={['MongoDB', 'Express','Angular', 'Node','Yummly']}
           image='../assets/feastly2.png'
           picSide='picLeft' />
