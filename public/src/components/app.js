@@ -18,7 +18,7 @@ class App extends Component {
          <Slide 
           id='slide1'
           href='https://hackerhabitatredux.herokuapp.com/'
-          github='https://github.com/richHong/Recastly-Redux'
+          github='https://github.com/richHong/HackerHabitatRedux'
           title='Hacker Habitat'
           description='Full stack web application used to quickly search and contact community-generated hacker houses'
           techStack={['MongoDB','Express','React','Redux','Node','Google Maps','Sendgrid']}
