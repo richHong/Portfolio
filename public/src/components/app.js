@@ -13,9 +13,7 @@ class App extends Component {
       <div>
       
         <Navigation/>
-
         <Front />
-
         
          <Slide 
           id='slide1'
