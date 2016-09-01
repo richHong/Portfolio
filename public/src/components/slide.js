@@ -13,7 +13,7 @@ class Slide extends Component {
             <br /><br/>
             <a href={ this.props.href } target="_blank">Live</a> | <a href={ this.props.github } target="_blank">Github</a>
           </div>
-        <a href={ this.props.href }>
+        <a href={ this.props.href } target="_blank">
           <img className={ this.props.picSide } src={ this.props.image } />
         </a>
 
