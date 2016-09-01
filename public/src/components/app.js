@@ -20,7 +20,7 @@ class App extends Component {
           github='https://github.com/richHong/Recastly-Redux'
           title='Hacker Habitat'
           description='Full stack web application used to quickly search and contact community-generated hacker houses'
-          techStack={['Node', 'React', 'Express', 'Redux', 'MongoDB','Google Maps', 'Sendgrid']}
+          techStack={['MongoDB','Express','React','Redux','Node','Google Maps','Sendgrid']}
           image='../assets/hackerhabitat.png'
           picSide='picLeft' />
 
@@ -30,7 +30,7 @@ class App extends Component {
           github='https://github.com/richHong/Artisinal'
           title='Artisanal'
           description='Full stack web application for businesses and users to list and review artisan foods shops and restaurants'
-          techStack={['MongoDB', 'Express','Angular', 'Node', 'Google Maps' ]}
+          techStack={['MongoDB','Express','Angular','Node','Google Maps']}
           image='../assets/artisinal.png'
           picSide='picRight' />
 
@@ -40,7 +40,7 @@ class App extends Component {
           github='https://github.com/richHong/Feast.ly'
           title='Feast.ly'
           description='Full stack web application designed to help users search for delicious recipes'
-          techStack={['MongoDB', 'Express','Angular', 'Node','Yummly']}
+          techStack={['MongoDB','Express','Angular','Node','Yummly']}
           image='../assets/feastly2.png'
           picSide='picLeft' />
 
