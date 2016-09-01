@@ -41,7 +41,7 @@ class App extends Component {
           title='Feast.ly'
           description='Full stack web application for businesses and users to list and review artisan foods shops and restaurants'
           techStack={['MongoDB', 'Express','Angular', 'Node','Yummly']}
-          image='../assets/feastly.png'
+          image='../assets/feastly2.png'
           picSide='picLeft' />
 
         <Footer />
