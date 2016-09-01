@@ -90,7 +90,7 @@ li {
 }
 .picLeft {
   position: absolute;
-  top: 63%;
+  top: 61.5%;
   left: 47%;
   width: 50vw;
   height: 65vh;
@@ -102,7 +102,7 @@ li {
 }
 .picRight {
   position: absolute;
-  top: 69%;
+  top: 72%;
   left: 77%;
   width: 50vw;
   height: 65vh;
