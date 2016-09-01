@@ -34,6 +34,12 @@ proxy.on('error', function(e) {
   console.log('Could not connect to proxy, please try again...');
 });
 
+app.route('/api/email')
+  .post(function(req, res){
+
+  });
+
+
 app.listen(port, function () {
   console.log('Server running on port ' + port);
 });

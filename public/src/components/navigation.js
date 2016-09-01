@@ -1,17 +1,17 @@
 import React, { Component }                     from 'react';
 import { Nav, NavItem, NavDropdown, MenuItem }  from 'react-bootstrap';
 import Modal                                    from 'react-modal';
-import PDF                                      from "react-pdfjs";
+import PDF                                      from 'react-pdfjs';
 
 const modalStyles = {
   overlay : {
     position          : 'fixed',
-    top               : '7vh',
-    left              : '24vw',
+    top               : '8%',
+    left              : '25%',
     right             : 0,
     bottom            : 0,
     backgroundColor   : 'rgba(255, 255, 255, 0.75)',
-    width             : '50vw'           
+    width             : '50%'           
   },
   content : {
     position                   : 'absolute',
@@ -48,14 +48,14 @@ class Navigation extends Component {
       <div>
       <Nav bsStyle="tabs" activeKey="1" >
         <NavItem eventKey="1" disabled>Portfolio</NavItem>
-        <NavItem eventKey="2" href='#aboutme'>About Me</NavItem>
-        <NavItem eventKey="3" href='#skills'>Skills</NavItem>
-        <NavDropdown eventKey="4" title="Projects" id="nav-dropdown">
-          <MenuItem eventKey="4.1" href='#slide1'>Hacker Habitat</MenuItem>
-          <MenuItem eventKey="4.2" href='#slide2'>Artisanal</MenuItem>
-          <MenuItem eventKey="4.3" href='#slide3'>Feast.ly</MenuItem>
+        <NavItem eventKey="2" onClick={this.openModal}>Resume</NavItem>
+        <NavDropdown eventKey="3" title="Projects" id="nav-dropdown">
+          <MenuItem eventKey="3.1" href='#slide1'>Hacker Habitat</MenuItem>
+          <MenuItem eventKey="3.2" href='#slide2'>Artisanal</MenuItem>
+          <MenuItem eventKey="3.3" href='#slide3'>Feast.ly</MenuItem>
         </NavDropdown>
-        <NavItem eventKey="5" onClick={this.openModal}>Resume</NavItem>
+        <NavItem eventKey="4" href='#aboutme'>About Me</NavItem>
+        <NavItem eventKey="5" href='#skills'>Skills</NavItem>
         <NavItem eventKey="6" href="#contact">Contact</NavItem>
         <NavItem eventKey="7" href="http://linkedin.com/in/richhong" target="_blank" >
           <i className="fa fa-linkedin"></i>

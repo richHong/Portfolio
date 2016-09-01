@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 
 class Footer extends Component {
+  sendEmail(e){
+    e.preventDefault();
+
+  }
   render(){
     return (
       <div id="contact"className="header">
@@ -17,9 +21,9 @@ class Footer extends Component {
           </div>
           <div className="footer-right">
             <h3>Contact Me</h3>
-            <form>
-              <input type="text" name="email" placeholder="Email" />
-              <textarea name="message" placeholder="Message"></textarea>
+            <form onSubmit={e => this.sendEmail(e)}>
+              <input type="text" name="email" placeholder="Email" required/>
+              <textarea name="message" placeholder="Message" required></textarea>
               <button>Send</button>
             </form>
           </div>
