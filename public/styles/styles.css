@@ -1,3 +1,54 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+
 html {
   height: 100%;
   overflow: hidden;
@@ -10,9 +61,10 @@ body {
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
+  font-family: 'Oswald', sans-serif;
 }
 h1 {
-   font-size: 250%
+   font-size: 250%;
 }
 p {
   font-size: 140%;
@@ -20,24 +72,11 @@ p {
   color: #333;
 }
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+  list-style-type: none;
+  background-color: #333;
 }
 li {
-    float: left;
-}
-li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-li a:hover {
-    background-color: #111;
+  float: left;
 }
 .slide {
   position: relative;
@@ -45,15 +84,14 @@ li a:hover {
   min-height: 100vh;
   width: 100vw;
   box-sizing: border-box;
-  /*box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);*/
   transform-style: inherit;
 }
 .picLeft {
   position: absolute;
-  top: 50%;
-  left: 43%;
-  width: 45vw;
-  height: 55vh;
+  top: 63%;
+  left: 47%;
+  width: 50vw;
+  height: 65vh;
   transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(0deg);
   padding: 3vh;
   border-radius: 2vh;
@@ -62,10 +100,10 @@ li a:hover {
 }
 .picRight {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 77%;
-  width: 45vw;
-  height: 55vh;
+  width: 50vw;
+  height: 65vh;
   transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(0deg);
   padding: 3vh;
   border-radius: 2vh;
@@ -87,13 +125,13 @@ li a:hover {
   background: rgba(240,230,220, .7);
   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 }
-.slide:nth-child(2n) .title {
-  margin-left: 0;
-  margin-right: auto;
-}
 .slide:nth-child(2n+1) .title {
   margin-left: auto;
   margin-right: 0;
+}
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
 }
 .slide, .slide:before {
   background: 50% 50% / cover;  
@@ -154,26 +192,21 @@ li a:hover {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
-  /*font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;*/
   text-align: left;
   padding: 50px 60px 40px;
   margin-top: 80px;
   overflow: hidden;
 }
-/* Footer left */
 .footer-distributed .footer-left{
   float: left;
 }
-/* The company logo */
 .footer-distributed h3{
   color:  #ffffff;
-  /*font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;*/
   margin: 0 0 10px;
 }
 .footer-distributed h3 span{
   color:  #5383d3;
 }
-/* Footer links */
 .footer-distributed .footer-links{
   color:  #ffffff;
   margin: 0 0 10px;
@@ -191,7 +224,6 @@ li a:hover {
   font-weight: normal;
   margin: 0;
 }
-/* Footer social icons */
 .footer-distributed .footer-icons{
   margin-top: 40px;
 }
@@ -209,7 +241,11 @@ li a:hover {
   margin-right: 15px;
   margin-bottom: 5px;
 }
-/* Footer Right */
+.nav-icons{
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+}
 .footer-distributed .footer-right{
   float: right;
 }
@@ -219,7 +255,6 @@ li a:hover {
   margin: 15px 42px 0 0;
   color: #ffffff;
 }
-/* The contact form */
 .footer-distributed form{
   display: inline-block;
 }
@@ -266,7 +301,6 @@ li a:hover {
   font-weight: bold;
   float: right;
 }
-/* If you don't want the footer to be responsive, remove these media queries */
 @media (max-width: 1000px) {
   .footer-distributed {
       font: bold 14px sans-serif;
@@ -305,3 +339,7 @@ li a:hover {
       float: none;
   }
 }
+.techStack {
+  color: #696969;
+}
+

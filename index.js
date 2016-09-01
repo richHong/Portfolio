@@ -3,9 +3,9 @@ import { render }           from 'react-dom';
 import { Provider }         from 'react-redux';
 import { createStore }      from 'redux';
 
-import exampleReducer from './public/src/reducers/root'
+import exampleReducer from './public/src/reducers/root';
 
-import App from './public/src/components/app';
+import App            from './public/src/components/app';
 
 let store = createStore(exampleReducer);
 
