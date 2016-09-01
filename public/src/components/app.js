@@ -4,6 +4,8 @@ import Slide                from './slide';
 import Footer               from './footer';
 import Navigation           from './navigation';
 import Front                from './front';
+import AboutMe              from './aboutme';
+import Skills               from './skills';
 
 class App extends Component {
   render() {
@@ -14,6 +16,7 @@ class App extends Component {
 
         <Front />
 
+        
          <Slide 
           id='slide1'
           href='https://hackerhabitatredux.herokuapp.com/'
@@ -44,6 +47,8 @@ class App extends Component {
           image='../assets/feastly2.png'
           picSide='picLeft' />
 
+        <AboutMe />
+        <Skills />
         <Footer />
 
       </div>

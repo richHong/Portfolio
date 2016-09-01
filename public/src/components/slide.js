@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Slide extends Component {
   render(){
     return (
-      <div id={ this.props.id } className="slide" name={ this.props.href }>
+      <div id={ this.props.id } className="slide" name={ this.props.id }>
           <div className="title">
             <h1>{ this.props.title }</h1>
             <br />
