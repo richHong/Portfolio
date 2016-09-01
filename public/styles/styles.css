@@ -78,6 +78,7 @@ ul {
 }
 li {
   float: left;
+  font-size: 120%;
 }
 .slide {
   position: relative;
@@ -346,4 +347,10 @@ li {
   color: #696969;
   line-height: 200%;
 }
-
+.fixed-navbar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
