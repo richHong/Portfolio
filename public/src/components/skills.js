@@ -5,6 +5,7 @@ class Skills extends Component {
     return (
       <div id='skills' className='slide' name='skills'>
       <h1>Skills</h1>
+      
       </div>
     );
   }
