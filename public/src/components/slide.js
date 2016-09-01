@@ -11,7 +11,7 @@ class Slide extends Component {
             <br />
             <span className='techStack'>{this.props.techStack.join(' • ')}</span>
             <br /><br/>
-            <a href={ this.props.href }>Live</a> | <a href={ this.props.github }>Github</a>
+            <a href={ this.props.href } target="_blank">Live</a> | <a href={ this.props.github } target="_blank">Github</a>
           </div>
         <a href={ this.props.href }>
           <img className={ this.props.picSide } src={ this.props.image } />
