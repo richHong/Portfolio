@@ -1,11 +1,30 @@
 import React, { Component } from 'react';
+import { Alert, Button }    from 'react-bootstrap';
 
 class Footer extends Component {
-  sendEmail(e){
+  constructor() {
+    super();
+    this.state={
+      successAlert: false,
+      errorAlert: false
+    };
+    this.successAlertDismiss = this.successAlertDismiss.bind(this);
+    this.errorAlertDismiss   = this.errorAlertDismiss.bind(this);
+  }
+  successAlertDismiss() {
+    this.setState({successAlert: false});
+  }
+  errorAlertDismiss() {
+    this.setState({errorAlert: false});
+  }
+  sendEmail(e) {
     e.preventDefault();
 
     let sender  = this.sender.value,
         message = this.message.value;
+
+        this.sender.value  = '';
+        this.message.value = '';
 
       fetch('/api/email', {
         method: 'POST',
@@ -34,15 +53,27 @@ class Footer extends Component {
       })
       .then(res => {
         if(res.status === 202){
-          alert("Your Message was Sent");
+          this.setState({successAlert: true});
         } else {
-          alert("Your Message Could Not Be Sent");
+          this.setState({errorAlert: true});
         }
       });
   }
   render(){
     return (
       <div id="contact"className="header">
+        { this.state.successAlert ? <Alert bsStyle="success" onDismiss={ this.successAlertDismiss }>
+                                      <p>Message was successfully sent!</p>
+                                      <p>
+                                        <Button bsStyle="success" onClick={ this.successAlertDismiss }>Close</Button>
+                                      </p>
+                                    </Alert> : null}
+        { this.state.errorAlert ? <Alert bsStyle="danger" onDismiss={ this.errorAlertDismiss }>
+                                      <p>Error sending email, try again.</p>
+                                      <p>
+                                        <Button bsStyle="danger" onClick={ this.errorAlertDismiss }>Close</Button>
+                                      </p>
+                                    </Alert> : null}
         <footer className="footer-distributed">
           <div className="footer-left">
             <h3>Portfolio</h3>
