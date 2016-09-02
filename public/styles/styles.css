@@ -382,3 +382,22 @@ li {
   font-size: 200%;
   color: #333;
 }
+.down-front {
+  position: absolute;
+  top: 12%;
+  left: 2%;
+  font-size: 200%;
+  color: #333;
+}
+.skill-icon {
+  float: left;
+  margin: 0 auto;
+  height: 15%;
+  width: 15%;
+  text-align: center;
+  margin-top: 2vh;
+}
+.skill-image {
+  height: 128px;
+  width: 128px;
+}

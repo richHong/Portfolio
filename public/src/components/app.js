@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect }          from 'react-redux';
+
 import Slide                from './slide';
 import Footer               from './footer';
 import Navigation           from './navigation';
@@ -9,14 +10,16 @@ import Skills               from './skills';
 import Sides                from './sides';
 
 class App extends Component {
+  componentDidMount() {
+  }
   render() {
     return (
       <div>
       
-        <Navigation/>
+        <Navigation />
         <Front />
         
-         <Slide 
+        <Slide 
           id='slide1'
           href='https://hackerhabitatredux.herokuapp.com/'
           github='https://github.com/richHong/HackerHabitatRedux'
@@ -52,9 +55,9 @@ class App extends Component {
           down='#sides'
           picSide='picLeft' />
 
-        <Sides up='#slide3' down='#aboutme'/>
-        <AboutMe up='#sides' down='#skills'/>
-        <Skills up='#aboutme' down='#contact'/>
+        <Sides />
+        <AboutMe />
+        <Skills />
         <Footer />
 
       </div>
