@@ -78,6 +78,7 @@ class Footer extends Component {
           <div className="footer-left">
             <h3>Portfolio</h3>
             <p className="footer-company-name">Richard Hong &copy; 2016</p>
+            <p className="footer-company-name"><a href="mailto:rich.hong@gmail.com"><i className="fa fa-envelope-o" aria-hidden="true"></i> rich.hong@gmail.com</a></p>
             <div className="footer-icons">
               <a href="http://linkedin.com/in/richhong" target="_blank"><i className="fa fa-linkedin"></i></a>
               <a href="https://angel.co/richard-hong-5" target="_blank"><i className="fa fa-angellist"></i></a>
