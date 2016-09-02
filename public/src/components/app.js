@@ -6,6 +6,7 @@ import Navigation           from './navigation';
 import Front                from './front';
 import AboutMe              from './aboutme';
 import Skills               from './skills';
+import Sides                from './sides';
 
 class App extends Component {
   render() {
@@ -45,6 +46,7 @@ class App extends Component {
           image='../assets/feastly2.png'
           picSide='picLeft' />
 
+        <Sides />
         <AboutMe />
         <Skills />
         <Footer />

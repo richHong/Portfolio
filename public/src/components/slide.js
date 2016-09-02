@@ -4,6 +4,7 @@ class Slide extends Component {
   render(){
     return (
       <div id={ this.props.id } className="slide" name={ this.props.id }>
+      <a className="home" href="#home"><i className="fa fa-home" aria-hidden="true"></i></a>
           <div className="title">
             <h1>{ this.props.title }</h1>
             <br />
@@ -16,8 +17,6 @@ class Slide extends Component {
         <a href={ this.props.href } target="_blank">
           <img className={ this.props.picSide } src={ this.props.image } />
         </a>
-
-
       </div>
     )
   }

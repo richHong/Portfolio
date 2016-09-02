@@ -45,44 +45,45 @@ class Navigation extends Component {
   }
   render() {
     return (
-      <div>
-      <Nav bsStyle="tabs" activeKey="1" >
-        <NavItem eventKey="1" disabled>Portfolio</NavItem>
-        <NavItem eventKey="2" onClick={this.openModal}>Resume</NavItem>
-        <NavDropdown eventKey="3" title="Projects" id="nav-dropdown">
-          <MenuItem eventKey="3.1" href='#slide1'>Hacker Habitat</MenuItem>
-          <MenuItem eventKey="3.2" href='#slide2'>Artisanal</MenuItem>
-          <MenuItem eventKey="3.3" href='#slide3'>Feast.ly</MenuItem>
-        </NavDropdown>
-        <NavItem eventKey="4" href='#aboutme'>About Me</NavItem>
-        <NavItem eventKey="5" href='#skills'>Skills</NavItem>
-        <NavItem eventKey="6" href="#contact">Contact</NavItem>
-        <NavItem eventKey="7" href="http://linkedin.com/in/richhong" target="_blank" >
-          <i className="fa fa-linkedin"></i>
-        </NavItem>
-        <NavItem eventKey="8" href="https://angel.co/richard-hong-5" target="_blank">
-          <i className="fa fa-angellist"></i>
-        </NavItem>
-        <NavItem eventKey="9" href="https://github.com/richHong" target="_blank">
-          <i className="fa fa-github"></i>
-        </NavItem>
-        <NavItem eventKey="10" href="http://richhong.github.io/" target="_blank">
-          <i className="fa fa-th-large"></i>
-        </NavItem>
-      </Nav>
-       <Modal
-        isOpen={this.state.modalIsOpen}
-        onRequestClose={this.closeModal}
-        style={modalStyles}
-        >
-        <div >
-          <a style={{ 'float':'left' }}href="../../assets/resume.pdf" download><i className="fa fa-download" aria-hidden="true" /> Download   </a>
-          <a style={{ 'float':'right'}} onClick={this.closeModal}>Close <i className="fa fa-times-circle" aria-hidden="true" /></a>
-        </div>
-        <div>
-          <PDF file="../../assets/resume.pdf"/>
-        </div>
-      </Modal>
+      <div id="home">
+        <Nav bsStyle="tabs" activeKey="1" >
+          <NavItem eventKey="1" disabled>Portfolio</NavItem>
+          <NavItem eventKey="2" onClick={this.openModal}>Resume</NavItem>
+          <NavDropdown eventKey="3" title="Main Projects" id="nav-dropdown">
+            <MenuItem eventKey="3.1" href='#slide1'>Hacker Habitat</MenuItem>
+            <MenuItem eventKey="3.2" href='#slide2'>Artisanal</MenuItem>
+            <MenuItem eventKey="3.3" href='#slide3'>Feast.ly</MenuItem>
+          </NavDropdown>
+          <NavItem eventKey="4" href='#sides'>Side Projects</NavItem>
+          <NavItem eventKey="5" href='#aboutme'>About Me</NavItem>
+          <NavItem eventKey="6" href='#skills'>Skills</NavItem>
+          <NavItem eventKey="7" href="#contact">Contact</NavItem>
+          <NavItem eventKey="8" href="http://linkedin.com/in/richhong" target="_blank" >
+            <i className="fa fa-linkedin"></i>
+          </NavItem>
+          <NavItem eventKey="9" href="https://angel.co/richard-hong-5" target="_blank">
+            <i className="fa fa-angellist"></i>
+          </NavItem>
+          <NavItem eventKey="10" href="https://github.com/richHong" target="_blank">
+            <i className="fa fa-github"></i>
+          </NavItem>
+          <NavItem eventKey="11" href="http://richhong.github.io/" target="_blank">
+            <i className="fa fa-th-large"></i>
+          </NavItem>
+        </Nav>
+         <Modal
+          isOpen={this.state.modalIsOpen}
+          onRequestClose={this.closeModal}
+          style={modalStyles}
+          >
+          <div >
+            <a style={{ 'float':'left' }}href="../../assets/resume.pdf" download><i className="fa fa-download" aria-hidden="true" /> Download   </a>
+            <a style={{ 'float':'right'}} onClick={this.closeModal}>Close <i className="fa fa-times-circle" aria-hidden="true" /></a>
+          </div>
+          <div>
+            <PDF file="../../assets/resume.pdf"/>
+          </div>
+        </Modal>
       </div>
     );
   }

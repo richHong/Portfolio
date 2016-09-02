@@ -62,7 +62,7 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   font-family: 'Oswald', sans-serif;
-  background-color: #333;
+  background-color: #292c2f;
 }
 h1 {
    font-size: 250%;
@@ -173,18 +173,24 @@ li {
   transform: translateZ(-1px) scale(2);
   z-index:-1;
 }
-#aboutme {
+#sides {
   background: #FF512F; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #FF512F , #F09819); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #FF512F , #F09819); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-attachment: fixed;
 }
-#skills:before {
+#aboutme:before {
   background: #cb2d3e; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #cb2d3e , #ef473a); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #cb2d3e , #ef473a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
   transform: translateZ(-1px) scale(2);
   z-index:-1;
+}
+#skills {
+  background: #7b4397; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #7b4397 , #dc2430); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #7b4397 , #dc2430); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-attachment: fixed;
 }
 .footer-distributed{
   background-color: #292c2f;
@@ -354,4 +360,11 @@ li {
   border: 1px solid #333;
   border-radius: 50%;
   height: 30vh;
+}
+.home{
+  position: absolute;
+  top: 4%;
+  left: 2%;
+  font-size: 300%;
+  color: #333;
 }
