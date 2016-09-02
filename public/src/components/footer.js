@@ -4,6 +4,41 @@ class Footer extends Component {
   sendEmail(e){
     e.preventDefault();
 
+    let sender  = this.sender.value,
+        message = this.message.value;
+
+      fetch('/api/email', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          "personalizations": [
+            {
+              "to": [
+                {
+                  "email": "rich.hong@gmail.com"
+                }
+              ],
+              "subject": "Portfolio Site Message"
+            }
+          ],
+          "from": {
+            "email": sender
+          },
+          "content": [
+            {
+              "type": "text/plain",
+              "value": message
+            }
+          ]
+        })
+      })
+      .then(res => {
+        if(res.status === 202){
+          alert("Your Message was Sent");
+        } else {
+          alert("Your Message Could Not Be Sent");
+        }
+      });
   }
   render(){
     return (
@@ -22,8 +57,8 @@ class Footer extends Component {
           <div className="footer-right">
             <h3>Contact Me</h3>
             <form onSubmit={e => this.sendEmail(e)}>
-              <input type="text" name="email" placeholder="Email" required/>
-              <textarea name="message" placeholder="Message" required></textarea>
+              <input type="email" name="email" placeholder="Email" ref={ input => this.sender = input }required/>
+              <textarea name="message" placeholder="Message" ref={ input => this.message = input }required></textarea>
               <button>Send</button>
             </form>
           </div>

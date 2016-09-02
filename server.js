@@ -1,8 +1,14 @@
-var express = require('express');
-var path = require('path');
-var httpProxy = require('http-proxy');
-var publicPath = path.resolve(__dirname, 'public');
+var express       = require('express'),
+    path          = require('path'),
+    httpProxy     = require('http-proxy'),
+    bodyParser    = require('body-parser'),
+    publicPath    = path.resolve(__dirname, 'public'),
+    isProduction  = process.env.NODE_ENV === 'production',
+    fetch         = require('isomorphic-fetch');
 
+if (!isProduction) {
+  var config = require('./config.js');
+}
 var port = process.env.PORT || 3000;
 
 // We need to add a configuration to our proxy server,
@@ -15,6 +21,10 @@ var app = express();
 
 //serving our index.html
 app.use(express.static(publicPath));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 
 //server/compiler.js runs webpack-dev-server which creates the bundle.js which index.html serves
 //the compiler adds some console logs for some extra sugar
@@ -36,7 +46,16 @@ proxy.on('error', function(e) {
 
 app.route('/api/email')
   .post(function(req, res){
-
+    fetch("https://api.sendgrid.com/v3/mail/send", {
+      method: "POST",
+      headers: {
+          "authorization": process.env.sendgridAuth || config.sendgridAuth,
+          "Content-Type": "application/json"
+      },
+      body: JSON.stringify(req.body)
+    }).then((response, req) => {
+      res.status(response.status).send(response);
+    });
   });
 
 

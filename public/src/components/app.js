@@ -24,6 +24,8 @@ class App extends Component {
           description='Full stack web application used to quickly search and contact community-generated hacker houses'
           techStack={['MongoDB','Express','React','Redux','Node','Google Maps','Sendgrid']}
           image='../assets/hackerhabitat.png'
+          up='#home'
+          down='#slide2'
           picSide='picLeft' />
 
         <Slide 
@@ -34,6 +36,8 @@ class App extends Component {
           description='Full stack web application for businesses and users to list and review artisan foods shops and restaurants'
           techStack={['MongoDB','Express','Angular','Node','Google Maps']}
           image='../assets/artisinal.png'
+          up='#slide1'
+          down='#slide3'
           picSide='picRight' />
 
         <Slide 
@@ -44,11 +48,13 @@ class App extends Component {
           description='Full stack web application designed to help users search for delicious recipes'
           techStack={['MongoDB','Express','Angular','Node','Yummly']}
           image='../assets/feastly2.png'
+          up='#slide2'
+          down='#sides'
           picSide='picLeft' />
 
-        <Sides />
-        <AboutMe />
-        <Skills />
+        <Sides up='#slide3' down='#aboutme'/>
+        <AboutMe up='#sides' down='#skills'/>
+        <Skills up='#aboutme' down='#contact'/>
         <Footer />
 
       </div>
