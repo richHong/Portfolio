@@ -69,7 +69,7 @@ class Footer extends Component {
                                       </p>
                                     </Alert> : null}
         { this.state.errorAlert ? <Alert bsStyle="danger" onDismiss={ this.errorAlertDismiss }>
-                                      <p>Error sending email, try again.</p>
+                                      <p>Error sending message! Try again.</p>
                                       <p>
                                         <Button bsStyle="danger" onClick={ this.errorAlertDismiss }>Close</Button>
                                       </p>
