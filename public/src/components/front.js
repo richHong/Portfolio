@@ -6,7 +6,7 @@ class Front extends Component {
       <div id="title" className="slide header">
         <h1>Richard Hong</h1>
         <br/>
-        <img className='profilePic' src='../assets/richard1.png' />
+        <img className='profilePic' src='../assets/richard.png' />
         <h4>Full-stack Software Engineer</h4>
       </div>
     );
