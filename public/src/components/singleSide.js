@@ -8,7 +8,10 @@ class SingleSide extends Component {
         <br/>
         <img className='side-image' src={ this.props.sideImage } />
         <br/>
-        <span>{ this.props.description }</span><br/>
+        <p>{ this.props.description }</p>
+        <br />
+        <span className='techStack'>{ this.props.techStack.join(' • ') }</span>
+        <br/>
         <a href={ this.props.href } target="_blank">Live Demo</a>
       </div>
     );
