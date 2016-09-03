@@ -76,9 +76,11 @@ class Navigation extends Component {
           onRequestClose={ this.closeModal }
           style={ modalStyles }
           >
-          <div >
-            <a style={{ 'float':'left' }}href="../../assets/resume.pdf" download><i className="fa fa-download" aria-hidden="true" /> Download   </a>
+          <div style={{ 'text-align':'center'}}>
+            <a style={{ 'float':'left' }} href="../../assets/resume.pdf" download><i className="fa fa-download" aria-hidden="true" /> Download   </a>
+            <a href="../../assets/resume.pdf" target="_blank"><i className="fa fa-folder-open" aria-hidden="true" /> Open </a>
             <a style={{ 'float':'right'}} onClick={this.closeModal}>Close <i className="fa fa-times-circle" aria-hidden="true" /></a>
+
           </div>
           <div>
             <PDF file="../../assets/resume.pdf" />
