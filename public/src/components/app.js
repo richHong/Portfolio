@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect }          from 'react-redux';
+import $                    from 'jquery';
 
 import Slide                from './slide';
 import Footer               from './footer';

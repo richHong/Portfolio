@@ -14,7 +14,7 @@ class Sides extends Component {
           sideImage='../../assets/socketrps.png'
           sideName='Socket Rock Paper Scissors'
           description='Interactive two player game of rock paper scissors'
-          techStack={['Socket.io', 'Express', 'Node','JQuery']}
+          techStack={['Socket.io', 'Express', 'Node','JQuery','Bootstrap']}
           href='https://socketrps.herokuapp.com/'/>
           <SingleSide 
           sideImage='../../assets/spotify.png'
