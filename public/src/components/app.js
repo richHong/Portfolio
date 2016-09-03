@@ -10,8 +10,6 @@ import Skills               from './skills';
 import Sides                from './sides';
 
 class App extends Component {
-  componentDidMount() {
-  }
   render() {
     return (
       <div>
@@ -64,9 +62,4 @@ class App extends Component {
     )
   }
 }
-function mapStateToProps(state){
-  return {
-    example: state.example
-  }
-}
-export default connect(mapStateToProps)(App);
+export default App;

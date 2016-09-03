@@ -72,16 +72,16 @@ class Navigation extends Component {
           </NavItem>
         </Nav>
          <Modal
-          isOpen={this.state.modalIsOpen}
-          onRequestClose={this.closeModal}
-          style={modalStyles}
+          isOpen={ this.state.modalIsOpen }
+          onRequestClose={ this.closeModal }
+          style={ modalStyles }
           >
           <div >
             <a style={{ 'float':'left' }}href="../../assets/resume.pdf" download><i className="fa fa-download" aria-hidden="true" /> Download   </a>
             <a style={{ 'float':'right'}} onClick={this.closeModal}>Close <i className="fa fa-times-circle" aria-hidden="true" /></a>
           </div>
           <div>
-            <PDF file="../../assets/resume.pdf"/>
+            <PDF file="../../assets/resume.pdf" />
           </div>
         </Modal>
       </div>

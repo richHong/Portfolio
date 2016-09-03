@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Tooltip }          from 'react-bootstrap';
 import Single               from './singleSkill';
 
-
 class Skills extends Component {
   render() {
     return (

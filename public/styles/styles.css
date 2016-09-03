@@ -52,6 +52,7 @@ table {
 html {
   height: 100%;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 body { 
   margin:0;
@@ -400,4 +401,12 @@ li {
 .skill-image {
   height: 128px;
   width: 128px;
+}
+.SimplePDF {
+  width: 350px;
+  height: 500px;
+  border: 1px dashed red;
+  margin: 15px;
+  padding: 15px;
+  float: left;
 }
