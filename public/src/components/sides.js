@@ -25,7 +25,7 @@ class Sides extends Component {
           <SingleSide 
           sideImage='../../assets/pokemon.png'
           sideName='Pokemon Jukebox'
-          description='Play your favorite Pokemon sounds'
+          description='Add your favorite Pokemon and listen to their signature sounds'
           techStack={['PokeAPI','Soundcloud','Express','Node','React']}
           href='https://pokemonjukebox.herokuapp.com/'/>
       </div>
