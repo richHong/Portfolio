@@ -15,18 +15,21 @@ class Sides extends Component {
           sideName='Socket Rock Paper Scissors'
           description='Interactive two player game of rock paper scissors'
           techStack={['Socket.io', 'Express', 'Node','JQuery','Bootstrap']}
+          github='https://github.com/richHong/socketrps'
           href='https://socketrps.herokuapp.com/'/>
           <SingleSide 
           sideImage='../../assets/spotify.png'
           sideName='Spotify Babay'
           description='Responsive app to search your favorite artist'
-          techStack={['Spotify','Express','Node','JQuery']}
+          techStack={['Spotify','Express','Node','JQuery','Bootstrap','Underscore']}
+          github='https://github.com/richHong/spotify'
           href='https://spotifybabay.herokuapp.com/'/>
           <SingleSide 
           sideImage='../../assets/pokemon.png'
           sideName='Pokemon Jukebox'
           description='Add your favorite Pokemon and listen to their signature sounds'
           techStack={['PokeAPI','Soundcloud','Express','Node','React']}
+          github='https://github.com/richHong/pokemon-jukebox'
           href='https://pokemonjukebox.herokuapp.com/'/>
       </div>
     );
