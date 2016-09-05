@@ -9,7 +9,6 @@ class Skills extends Component {
         <a className="up" href="#aboutme"><i className="fa fa-arrow-up" aria-hidden="true"></i></a>
         <a className="home" href="#home"><i className="fa fa-home" aria-hidden="true"></i></a>
         <a className="down" href="#contact"><i className="fa fa-arrow-down" aria-hidden="true"></i></a>
-        
         <h1>Skills</h1>
         <SingleSkill skillIcon='../../assets/icons/angular.png' skillName='Angular'/>
         <SingleSkill skillIcon='../../assets/icons/backbone.png' skillName='Backbone'/>
@@ -29,7 +28,6 @@ class Skills extends Component {
         <SingleSkill skillIcon='../../assets/icons/redux.png' skillName='Redux'/>
         <SingleSkill skillIcon='../../assets/icons/socketio.png' skillName='Socket.io'/>
         <SingleSkill skillIcon='../../assets/icons/underscore.png' skillName='Underscore'/>
-
       </div>
     );
   }

@@ -14,10 +14,8 @@ class App extends Component {
   render() {
     return (
       <div>
-      
         <Navigation />
         <Front />
-        
         <Slide 
           id='slide1'
           href='https://hackerhabitatredux.herokuapp.com/'
@@ -28,8 +26,7 @@ class App extends Component {
           image='../assets/hackerhabitat.png'
           up='#home'
           down='#slide2'
-          picSide='picLeft' />
-
+          picSide='pic-left' />
         <Slide 
           id='slide2'
           href='https://artisanalapp.herokuapp.com/#/'
@@ -40,8 +37,7 @@ class App extends Component {
           image='../assets/artisinal.png'
           up='#slide1'
           down='#slide3'
-          picSide='picRight' />
-
+          picSide='pic-right' />
         <Slide 
           id='slide3'
           href='https://feastlyapp.herokuapp.com/#/home'
@@ -52,15 +48,13 @@ class App extends Component {
           image='../assets/feastly.png'
           up='#slide2'
           down='#sides'
-          picSide='picLeft' />
-
+          picSide='pic-left' />
         <Sides />
         <AboutMe />
         <Skills />
         <Footer />
-
       </div>
     )
-  }
-}
+  };
+};
 export default App;

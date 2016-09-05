@@ -89,7 +89,7 @@ li {
   box-sizing: border-box;
   transform-style: inherit;
 }
-.picLeft {
+.pic-left {
   position: absolute;
   top: 65%;
   left: 47%;
@@ -101,7 +101,7 @@ li {
   background: rgba(240,230,220, .7);
   box-shadow: 0 0 1vh rgba(0, 0, 0, .7);
 }
-.picRight {
+.pic-right {
   position: absolute;
   top: 65%;
   left: 77%;
@@ -356,7 +356,7 @@ li {
   width: 100%;
   z-index: 1000;
 }
-.profilePic {
+.profile-pic {
   border: 1px solid #333;
   border-radius: 50%;
   height: 20%;

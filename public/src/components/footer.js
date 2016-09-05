@@ -37,7 +37,7 @@ class Footer extends Component {
                   "email": "rich.hong@gmail.com"
                 }
               ],
-              "subject": "Portfolio Site Message"
+              "subject": "Richard Hong's Portfolio Site Message (www.richardhong.me)"
             }
           ],
           "from": {
@@ -88,7 +88,7 @@ class Footer extends Component {
           </div>
           <div className="footer-right">
             <h3>Contact Me</h3>
-            <form onSubmit={e => this.sendEmail(e)}>
+            <form onSubmit={ e => this.sendEmail(e) }>
               <input type="email" name="email" placeholder="Email" ref={ input => this.sender = input }required/>
               <textarea name="message" placeholder="Message" ref={ input => this.message = input }required></textarea>
               <button>Send</button>
@@ -98,6 +98,5 @@ class Footer extends Component {
       </div>
     )
   }
-}
-
+};
 export default Footer;
