@@ -6,7 +6,7 @@ class SingleSide extends Component {
       <div className='side-container'>
         <h2>{ this.props.sideName }</h2>
         <br/>
-        <img className='side-image' src={ this.props.sideImage } />
+        <a href={ this.props.href } target="_blank"><img className='side-image' src={ this.props.sideImage } /></a>
         <br/>
         <p>{ this.props.description }</p>
         <br />
