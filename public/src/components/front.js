@@ -8,6 +8,7 @@ class Front extends Component {
         <h1>Richard Hong</h1>
         <br/>
         <img className='profilePic' src='../assets/richard.png' />
+        <br/>
         <h4>Full-stack Software Engineer</h4>
       </div>
     );
