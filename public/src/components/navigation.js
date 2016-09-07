@@ -68,7 +68,7 @@ class Navigation extends Component {
             <i className="fa fa-github"></i>
           </NavItem>
           <NavItem eventKey="11" href="http://richhong.github.io/" target="_blank">
-            <i className="fa fa-th-large"></i>
+            <i className="fa fa-book"></i>
           </NavItem>
         </Nav>
          <Modal

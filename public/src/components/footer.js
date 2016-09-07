@@ -83,7 +83,7 @@ class Footer extends Component {
               <a href="http://linkedin.com/in/richhong" target="_blank"><i className="fa fa-linkedin"></i></a>
               <a href="https://angel.co/richard-hong-5" target="_blank"><i className="fa fa-angellist"></i></a>
               <a href="https://github.com/richHong" target="_blank"><i className="fa fa-github"></i></a>
-              <a href="http://richhong.github.io/" target="_blank"><i className="fa fa-th-large"></i></a>
+              <a href="http://richhong.github.io/" target="_blank"><i className="fa fa-book"></i></a>
             </div>
           </div>
           <div className="footer-right">
