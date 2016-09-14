@@ -50,13 +50,13 @@ class Navigation extends Component {
           <NavItem eventKey="1" disabled>Portfolio</NavItem>
           <NavItem eventKey="2" onClick={this.openModal}>Resume</NavItem>
           <NavDropdown eventKey="3" title="Main Projects" id="nav-dropdown">
-            <MenuItem eventKey="3.1" href='#slide1'>Hacker Habitat</MenuItem>
-            <MenuItem eventKey="3.2" href='#slide2'>Artisanal</MenuItem>
-            <MenuItem eventKey="3.3" href='#slide3'>Feast.ly</MenuItem>
+            <MenuItem eventKey="3.1" href="#slide1">Hacker Habitat</MenuItem>
+            <MenuItem eventKey="3.2" href="#slide2">Artisanal</MenuItem>
+            <MenuItem eventKey="3.3" href="#slide3">Feast.ly</MenuItem>
           </NavDropdown>
-          <NavItem eventKey="4" href='#sides'>Side Projects</NavItem>
-          <NavItem eventKey="5" href='#aboutme'>About Me</NavItem>
-          <NavItem eventKey="6" href='#skills'>Skills</NavItem>
+          <NavItem eventKey="4" href="#sides">Side Projects</NavItem>
+          <NavItem eventKey="5" href="#aboutme">About Me</NavItem>
+          <NavItem eventKey="6" href="#skills">Skills</NavItem>
           <NavItem eventKey="7" href="#contact">Contact</NavItem>
           <NavItem eventKey="8" href="http://linkedin.com/in/richhong" target="_blank" >
             <i className="fa fa-linkedin"></i>
