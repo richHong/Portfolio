@@ -10,9 +10,9 @@ class SingleSide extends Component {
         <br/>
         <p>{ this.props.description }</p>
         <br />
-        <span className='techStack'>{ this.props.techStack.join(' • ') }</span>
-        <br/>
         <a href={ this.props.href } target="_blank">Live Demo</a> | <a href={ this.props.github } target="_blank">Github</a>
+        <br/>
+        <span className='techStack'>{ this.props.techStack.join(' • ') }</span>
       </div>
     );
   };

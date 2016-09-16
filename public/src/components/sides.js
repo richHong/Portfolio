@@ -12,7 +12,7 @@ class Sides extends Component {
         <br/>
           <SingleSide 
           sideImage='../../assets/socketrps.png'
-          sideName='Socket Rock Paper Scissors'
+          sideName='Socket RPS'
           description='Interactive two player game of rock paper scissors'
           techStack={['Socket.io', 'Express', 'Node','JQuery','Bootstrap']}
           github='https://github.com/richHong/socketrps'
@@ -31,6 +31,13 @@ class Sides extends Component {
           techStack={['PokeAPI','Soundcloud','Express','Node','React']}
           github='https://github.com/richHong/pokemon-jukebox'
           href='https://pokemonjukebox.herokuapp.com/'/>
+          <SingleSide
+          sideImage
+          sideName='OpenEMIS'
+          description='Set up web server for OpenEMIS installation for Justice Rising'
+          techStack={['AWS EC2, Ubuntu, Apache, MySQL, PHP']}
+          github=''
+          href='' />
       </div>
     );
   }
