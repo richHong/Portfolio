@@ -32,12 +32,12 @@ class Sides extends Component {
           github='https://github.com/richHong/pokemon-jukebox'
           href='https://pokemonjukebox.herokuapp.com/'/>
           <SingleSide
-          sideImage
+          sideImage='../../assets/openemis.png'
           sideName='OpenEMIS'
           description='Set up web server for OpenEMIS installation for Justice Rising'
           techStack={['AWS EC2, Ubuntu, Apache, MySQL, PHP']}
-          github=''
-          href='' />
+          github='https://github.com/richHong/openEMIS'
+          href='http://ec2-54-153-17-27.us-west-1.compute.amazonaws.com/openemis-school/' />
       </div>
     );
   }
